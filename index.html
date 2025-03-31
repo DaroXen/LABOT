@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LabBot</title>
   <style>
     body {
@@ -12,40 +13,37 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .bot-container {
       position: relative;
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
       height: 600px;
     }
 
-    .bot-overlay {
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .bot-overlay-logo {
       position: absolute;
       bottom: 70px;
       right: 36px;
       width: 100px;
-      height: 18px;
-      background-color: white;
+      height: auto;
       z-index: 999;
-      border-radius: 2px;
-    }
-
-    iframe {
-      border: none;
     }
   </style>
 </head>
 <body>
 
   <div class="bot-container">
-    <iframe
-      src="https://app.paal.ai/cs?bid=108ad4b6"
-      width="400"
-      height="600">
-    </iframe>
-    <div class="bot-overlay"></div>
+    <iframe src="https://app.paal.ai/cs?bid=108ad4b6"></iframe>
+    <img src="logo.png" class="bot-overlay-logo">
   </div>
 
 </body>
