@@ -21,6 +21,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       max-width: 800px;
       width: 100%;
+      position: relative;
     }
     h1 {
       text-align: center;
@@ -39,13 +40,32 @@
       border: none;
       border-radius: 12px;
     }
+    .logo-overlay {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 130px;
+      height: 30px;
+      background-color: white;
+      border-radius: 6px;
+      z-index: 10;
+    }
+    .logo-overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🤖 Bienvenido a NutsBot</h1>
     <p>Consultá nuestros productos, precios y condiciones. El bot responde automáticamente 24/7.</p>
-    <iframe src="https://app.paal.ai/cs?bid=f8976402" allow="clipboard-write; microphone;"></iframe>
+    <iframe src="https://app.paal.ai/cs?bid=718e8cb2" allow="clipboard-write; microphone;"></iframe>
+    <div class="logo-overlay">
+      <img src="logobot.png" alt="Logo">
+    </div>
   </div>
 </body>
 </html>
