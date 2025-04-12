@@ -6,35 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-    h1 {
-      color: #333;
+      background: linear-gradient(135deg, #f2f2f2 0%, #e0f7fa 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      color: #00796B;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 30px;
     }
     iframe {
       width: 100%;
       height: 600px;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🤖 Bienvenido a NutsBot</h1>
-    <p>Consultá por nuestros productos, precios y condiciones. El bot responde automáticamente en cualquier momento.</p>
-    
+    <p>Consultá nuestros productos, precios y condiciones. El bot responde automáticamente 24/7.</p>
     <iframe src="https://app.paal.ai/cs?bid=718e8cb2" allow="clipboard-write; microphone;"></iframe>
   </div>
 </body>
