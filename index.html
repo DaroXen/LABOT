@@ -2,49 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>NutsBot – Atención al cliente</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LabBot</title>
   <style>
     body {
-      background-color: #2c2c2c;
-      color: white;
       font-family: sans-serif;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      padding: 20px;
+      background-color: #f5f5f5;
     }
-
-    .bot-container {
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      height: 600px;
+    h1 {
+      color: #333;
     }
-
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
     iframe {
       width: 100%;
-      height: 100%;
+      height: 600px;
       border: none;
-    }
-
-    .bot-overlay-logo {
-      position: absolute;
-      bottom: 70px;
-      right: 36px;
-      width: 100px;
-      height: auto;
-      z-index: 999;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-
-  <div class="bot-container">
-    <iframe src="https://app.paal.ai/cs?bid=108ad4b6"></iframe>
-    <img src="logo.png" class="bot-overlay-logo">
+  <div class="container">
+    <h1>🤖 Bienvenido a NutsBot</h1>
+    <p>Consultá por nuestros productos, precios y condiciones. El bot responde automáticamente en cualquier momento.</p>
+    
+    <iframe src="https://app.paal.ai/cs?bid=718e8cb2" allow="clipboard-write; microphone;"></iframe>
   </div>
-
 </body>
 </html>
