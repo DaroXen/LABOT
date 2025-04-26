@@ -1,75 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>NutsBot – Atención al cliente</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #f2f2f2 0%, #e0f7fa 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-      width: 100%;
-      position: relative;
-    }
-    h1 {
-      text-align: center;
-      color: #00796B;
-      margin-bottom: 10px;
-    }
-    p {
-      text-align: center;
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 30px;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 12px;
-    }
-    .logo-overlay {
-      position: absolute;
-      bottom: 300px; /* Subido más */
-      right: 100px; /* Más a la izquierda */
-      width: 160px;
-      height: 50px;
-      background-color: black;
-      border-radius: 6px;
-      z-index: 10;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo-overlay img {
-      max-width: 180%;
-      max-height: 240%;
-      object-fit: contain;
-      border-radius: 6px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat con n8n</title>
+  <!-- Enlace a la hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Enlace a los estilos del widget de chat de n8n -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>🤖 Bienvenido a NutsBot</h1>
-    <p>Consultá nuestros productos, precios y condiciones. El bot responde automáticamente 24/7.</p>
-    <iframe src="https://emeem.app.n8n.cloud/webhook/716458ef-494e-4c03-b04a-93b0868a63ae/chat" allow="clipboard-write; microphone;"></iframe>
-    <div class="logo-overlay">
-      <img src="logobot.png" alt="Logo">
-    </div>
-  </div>
+  <h1>Bienvenido a mi sitio web</h1>
+  <p>Interactúa con nuestro asistente virtual a través del chat.</p>
+
+  <!-- Enlace al script personalizado -->
+  <script src="script.js" type="module"></script>
 </body>
 </html>
-
