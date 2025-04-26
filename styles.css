@@ -1,0 +1,16 @@
+
+/* Estilos generales de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Personalización del widget de chat de n8n */
+:root {
+  --chat--color-primary: #e74266;
+  --chat--color-background: #ffffff;
+  --chat--color-text: #000000;
+
+}
